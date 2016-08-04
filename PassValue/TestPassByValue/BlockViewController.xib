@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlockViewController">
+            <connections>
+                <outlet property="aLabel" destination="FBN-8g-vd3" id="elf-H0-VNf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="block传值" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="278" translatesAutoresizingMaskIntoConstraints="NO" id="enz-sO-p43">
+                    <rect key="frame" x="21" y="41" width="278" height="144"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="wnj-qL-sLq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="等待传值" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="FBN-8g-vd3">
+                    <rect key="frame" x="27" y="290" width="267" height="179"/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3m-z0-16p">
+                    <rect key="frame" x="122" y="193" width="76" height="35"/>
+                    <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dBU-uA-XEu"/>
+                    </constraints>
+                    <state key="normal" title="跳转">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressButton:" destination="-1" eventType="touchUpInside" id="PT2-Jd-nh0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="k3m-z0-16p" firstAttribute="top" secondItem="enz-sO-p43" secondAttribute="bottom" constant="20" id="2ID-ms-hLt"/>
+                <constraint firstAttribute="trailing" secondItem="FBN-8g-vd3" secondAttribute="trailing" constant="20" id="9x3-2e-MS1"/>
+                <constraint firstAttribute="trailing" secondItem="enz-sO-p43" secondAttribute="trailing" constant="21" id="Mn4-MY-b68"/>
+                <constraint firstItem="k3m-z0-16p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Ojp-cl-Pud"/>
+                <constraint firstItem="FBN-8g-vd3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="aMR-yn-7mk"/>
+                <constraint firstItem="enz-sO-p43" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="cvj-jr-tTx"/>
+                <constraint firstAttribute="trailing" secondItem="k3m-z0-16p" secondAttribute="trailing" constant="20" id="ifr-A6-7Xn"/>
+                <constraint firstItem="FBN-8g-vd3" firstAttribute="top" secondItem="k3m-z0-16p" secondAttribute="bottom" constant="62" id="tJj-0m-LZ6"/>
+                <constraint firstItem="enz-sO-p43" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="21" id="zme-0G-OvY"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
