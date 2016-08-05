@@ -33,13 +33,10 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
     if ([self.delegate respondsToSelector:@selector(passValue:)]) {
         //第三步：确定合适的实际调用代理方法
         [self.delegate passValue:@"如果调试(debug)是去除bug的过程, 那么编程就是制造bug的过程。"];
     }
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

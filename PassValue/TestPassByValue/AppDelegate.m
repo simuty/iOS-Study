@@ -36,7 +36,7 @@
 
 - (void)wifi
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"有wifi" message:@"开始下片" delegate:nil cancelButtonTitle:@"无情的拒绝" otherButtonTitles:@"哈哈哈", nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"收到消息" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"待开发", nil];
     [alertView show];
 }
 
