@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController">
+            <connections>
+                <outlet property="showLab" destination="BiN-eh-TwY" id="rhA-YQ-8jp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCS-t6-Kva">
+                    <rect key="frame" x="38" y="150" width="244" height="40"/>
+                    <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BzK-Wt-kBc"/>
+                    </constraints>
+                    <state key="normal" title="通知传值">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressButton:" destination="-1" eventType="touchUpInside" id="Mib-Dx-0Jt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等待显示" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiN-eh-TwY">
+                    <rect key="frame" x="38" y="220" width="244" height="138.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="138.5" id="pgF-H7-OGc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BiN-eh-TwY" firstAttribute="trailing" secondItem="YCS-t6-Kva" secondAttribute="trailing" id="FEr-bM-oLz"/>
+                <constraint firstItem="YCS-t6-Kva" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="PWX-Ae-5wj"/>
+                <constraint firstItem="BiN-eh-TwY" firstAttribute="leading" secondItem="YCS-t6-Kva" secondAttribute="leading" id="Vc3-ZW-Ryz"/>
+                <constraint firstItem="BiN-eh-TwY" firstAttribute="top" secondItem="YCS-t6-Kva" secondAttribute="bottom" constant="30" id="YMk-Cy-dqk"/>
+                <constraint firstAttribute="trailing" secondItem="YCS-t6-Kva" secondAttribute="trailing" constant="38" id="e7f-y7-q5M"/>
+                <constraint firstItem="YCS-t6-Kva" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="xfW-pc-coW"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
