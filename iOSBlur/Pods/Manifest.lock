@@ -1,0 +1,15 @@
+PODS:
+  - FXBlurView (1.6.4)
+  - GPUImage (0.1.7)
+
+DEPENDENCIES:
+  - FXBlurView (~> 1.6.4)
+  - GPUImage (~> 0.1.7)
+
+SPEC CHECKSUMS:
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+
+PODFILE CHECKSUM: 00a1d740fd8dd5c5a67abf9d0fa0c00e111dc3ef
+
+COCOAPODS: 1.0.0
