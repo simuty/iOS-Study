@@ -38,7 +38,7 @@
     //默认声音
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     //通知参数
-    localNotification.userInfo = @{LocalNotificationKey: @"恭喜你, 本地通知已归你所有"};
+    localNotification.userInfo = @{LocalNotificationKey: @"恭喜你, 已收到本地通知"};
     localNotification.category = NotificationCategoryIdent;
     //
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];

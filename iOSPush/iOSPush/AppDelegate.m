@@ -34,8 +34,6 @@
     //        [application registerForRemoteNotifications];
     //
     
-    
-    
     return YES;
 }
 
@@ -45,8 +43,6 @@
  *
  *  为了创建交互式通知，需要iOS 8提供的3个新类：UIUserNotificationSettings, UIUserNotificationCategory, UIUserNotificationAction 以及它们的变体。
  */
-
-
 - (void)registerLocationNotification:(UIApplication *)application{
     
     
