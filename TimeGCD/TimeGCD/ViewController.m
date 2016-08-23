@@ -35,6 +35,8 @@
     __block int startTimer = 0;
     __weak typeof(self) weakself = self;
     
+    
+    
     //开启专门的线程处理timer
     self.timerQueue = dispatch_queue_create("TimerQueue", 0);
     self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, _timerQueue);
