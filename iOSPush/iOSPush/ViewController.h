@@ -2,7 +2,7 @@
 //  ViewController.h
 //  iOSPush
 //
-//  Created by BWF-HHW on 16/8/4.
+//  Created by HHW-HHW on 16/8/4.
 //  Copyright © 2016年 HHW. All rights reserved.
 //
 

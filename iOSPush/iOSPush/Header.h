@@ -1,10 +1,12 @@
 //
 //  Header.h
-//  BWFCHPush
+//  HHWCHPush
 //
 //  Created by HHW on 16/6/30.
-//  Copyright © 2016年 BWF. All rights reserved.
+//  Copyright © 2016年 HHW. All rights reserved.
 //
+
+
 
 #define NotificationCategoryIdent   @"ACTIONABLE"
 #define NotificationActionOneIdent  @"ACTION_ONE"

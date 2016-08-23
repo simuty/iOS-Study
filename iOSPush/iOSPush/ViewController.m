@@ -2,7 +2,7 @@
 //  ViewController.m
 //  iOSPush
 //
-//  Created by BWF-HHW on 16/8/4.
+//  Created by HHW-HHW on 16/8/4.
 //  Copyright © 2016年 HHW. All rights reserved.
 //
 
@@ -40,7 +40,6 @@
     //通知参数
     localNotification.userInfo = @{LocalNotificationKey: @"恭喜你, 已收到本地通知"};
     localNotification.category = NotificationCategoryIdent;
-    //
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
