@@ -19,6 +19,7 @@
 
 // 当前会话
 @property (strong, nonatomic)  NSURLSession *currentSession;
+
 // 后台会话
 @property (strong, nonatomic) NSURLSession *backgroundSession;
 
@@ -59,6 +60,7 @@
 - (IBAction)startDownload:(id)sender {
 
     if (!self.cancelDownloadTask) {
+        
         self.imageView.image = nil;
         NSString *imageURLStr = @"http://upload-images.jianshu.io/upload_images/326255-2834f592d7890aa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240";
         //创建网络请求
@@ -178,10 +180,14 @@
  totalBytesWritten:(int64_t)totalBytesWritten // 当前一共写入的data字节数
 totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite // 期望收到的所有data字节数
 {
+    
     // 计算当前下载进度并更新视图
     float downloadProgress = totalBytesWritten / (float)totalBytesExpectedToWrite;
     NSLog(@"----%f", downloadProgress);
 
+    NSLog(@"----%@", [NSThread currentThread]);
+
+    
     WeakSelf;
     dispatch_async(dispatch_get_main_queue(), ^{
         /* 根据下载进度更新视图 */
@@ -203,6 +209,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes {
 
 /* 完成下载任务，只有下载成功才调用该方法 */
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
+    
     NSLog(@"NSURLSessionDownloadDelegate: Finish downloading");
     NSLog(@"----%@", [NSThread currentThread]);
 
