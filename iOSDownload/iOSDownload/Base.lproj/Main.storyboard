@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSE-AA-ikD">
+                                <rect key="frame" x="10" y="20" width="580" height="260"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="2gg-64-hZa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-jl-nHL">
+                                <rect key="frame" x="40" y="343" width="141" height="45"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="lzJ-gX-qAK"/>
+                                    <constraint firstAttribute="width" secondItem="aTx-jl-nHL" secondAttribute="height" multiplier="47:15" id="vEY-r9-ykV"/>
+                                </constraints>
+                                <state key="normal" title="开始下载"/>
+                                <connections>
+                                    <action selector="startDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHn-Cd-xvq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-63-yTM">
+                                <rect key="frame" x="420" y="323" width="141" height="45"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HrF-63-yTM" secondAttribute="height" multiplier="47:15" id="C0l-rN-h6O"/>
+                                    <constraint firstAttribute="width" constant="141" id="oWH-Ld-e46"/>
+                                </constraints>
+                                <state key="normal" title="后台下载"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C0l-rN-h6O"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFL-Tt-e5V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh0-xQ-XyL">
+                                <rect key="frame" x="420" y="405" width="141" height="45"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="Bf7-JH-5Cg"/>
+                                    <constraint firstAttribute="width" secondItem="Vh0-xQ-XyL" secondAttribute="height" multiplier="47:15" id="Va1-qX-940"/>
+                                </constraints>
+                                <state key="normal" title="取消下载任务">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Va1-qX-940"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWG-KD-kT7"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-cz-ME8">
+                                <rect key="frame" x="40" y="319" width="520" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1c-ci-Qjn">
+                                <rect key="frame" x="57" y="435" width="60" height="30"/>
+                                <state key="normal" title="后台下载"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cip-ze-XpD">
+                                <rect key="frame" x="31" y="425" width="159" height="45"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="0X6-BO-d7A"/>
+                                    <constraint firstAttribute="width" secondItem="cip-ze-XpD" secondAttribute="height" multiplier="47:15" id="jle-2T-FPU"/>
+                                </constraints>
+                                <state key="normal" title="断点续传下载, 点击开始">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="suspendDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6As-cI-T7d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cip-ze-XpD" firstAttribute="width" secondItem="cip-ze-XpD" secondAttribute="height" multiplier="47:15" id="7By-mo-GAg"/>
+                            <constraint firstItem="rSE-AA-ikD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="DHm-sK-3N7"/>
+                            <constraint firstItem="HrF-63-yTM" firstAttribute="width" secondItem="HrF-63-yTM" secondAttribute="height" multiplier="47:15" id="FYn-OS-hjp"/>
+                            <constraint firstItem="Vh0-xQ-XyL" firstAttribute="trailing" secondItem="HrF-63-yTM" secondAttribute="trailing" id="Jxc-jA-XUu"/>
+                            <constraint firstItem="rSE-AA-ikD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MzZ-YQ-Kki"/>
+                            <constraint firstAttribute="trailing" secondItem="rSE-AA-ikD" secondAttribute="trailing" constant="10" id="OP0-i9-dye"/>
+                            <constraint firstItem="aTx-jl-nHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="RE9-RG-qJg"/>
+                            <constraint firstItem="cip-ze-XpD" firstAttribute="leading" secondItem="aTx-jl-nHL" secondAttribute="leading" id="W5y-VX-g01"/>
+                            <constraint firstItem="GKH-cz-ME8" firstAttribute="trailing" secondItem="HrF-63-yTM" secondAttribute="trailing" id="ZKs-ZD-Kfk"/>
+                            <constraint firstItem="aTx-jl-nHL" firstAttribute="top" secondItem="rSE-AA-ikD" secondAttribute="bottom" constant="63" id="bzs-UL-27x"/>
+                            <constraint firstItem="GKH-cz-ME8" firstAttribute="leading" secondItem="aTx-jl-nHL" secondAttribute="leading" id="kCE-cx-tFg"/>
+                            <constraint firstItem="Vh0-xQ-XyL" firstAttribute="centerY" secondItem="cip-ze-XpD" secondAttribute="centerY" id="pCV-v5-CfW"/>
+                            <constraint firstItem="HrF-63-yTM" firstAttribute="centerY" secondItem="aTx-jl-nHL" secondAttribute="centerY" id="uR4-PU-Tdv"/>
+                            <constraint firstItem="GKH-cz-ME8" firstAttribute="top" secondItem="rSE-AA-ikD" secondAttribute="bottom" constant="39" id="uUy-QQ-506"/>
+                            <constraint firstItem="cip-ze-XpD" firstAttribute="top" secondItem="aTx-jl-nHL" secondAttribute="bottom" constant="37" id="vbD-N5-E5i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HrF-63-yTM" secondAttribute="trailing" constant="20" id="wFZ-XH-jJJ"/>
+                            <constraint firstItem="Vh0-xQ-XyL" firstAttribute="width" secondItem="Vh0-xQ-XyL" secondAttribute="height" multiplier="47:15" id="wiZ-JK-Mk7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="K1c-ci-Qjn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backDownloadBtn" destination="HrF-63-yTM" id="yfs-h5-hoe"/>
+                        <outlet property="cancalDownloadBtn" destination="Vh0-xQ-XyL" id="nbl-Cw-oqb"/>
+                        <outlet property="imageView" destination="rSE-AA-ikD" id="zvT-fs-oJz"/>
+                        <outlet property="progressView" destination="GKH-cz-ME8" id="VrZ-ih-ymS"/>
+                        <outlet property="startDownloadBtn" destination="aTx-jl-nHL" id="Rmi-1V-cFk"/>
+                        <outlet property="suspendBtn" destination="cip-ze-XpD" id="7ca-nh-Vid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="337"/>
+        </scene>
+    </scenes>
+</document>

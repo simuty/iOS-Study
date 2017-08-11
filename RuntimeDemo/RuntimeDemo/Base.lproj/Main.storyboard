@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYP-3f-PE3">
+                                <rect key="frame" x="40" y="122" width="520" height="30"/>
+                                <state key="normal" title="获取所有的变量"/>
+                                <connections>
+                                    <action selector="getAllVar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ktu-eP-6F4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P9-Oj-5xm">
+                                <rect key="frame" x="40" y="160" width="520" height="30"/>
+                                <state key="normal" title="获取所有的方法"/>
+                                <connections>
+                                    <action selector="getAllMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQk-NB-CVw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-YF-9S3">
+                                <rect key="frame" x="40" y="200" width="520" height="30"/>
+                                <state key="normal" title="改变私有变量的值"/>
+                                <connections>
+                                    <action selector="changePrivateVar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96r-Hh-eRL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS2-6e-y7i">
+                                <rect key="frame" x="40" y="242" width="520" height="30"/>
+                                <state key="normal" title="添加一个新的属性"/>
+                                <connections>
+                                    <action selector="addNewVar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqX-EI-m9J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-Cb-Wi8">
+                                <rect key="frame" x="40" y="280" width="520" height="30"/>
+                                <state key="normal" title="添加一个新的方法"/>
+                                <connections>
+                                    <action selector="addNewMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7SA-Eo-zoC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8w-WU-nH0">
+                                <rect key="frame" x="40" y="320" width="520" height="30"/>
+                                <state key="normal" title="交换两个的方法"/>
+                                <connections>
+                                    <action selector="exchangeMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBj-SW-282"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghp-hJ-EiB">
+                                <rect key="frame" x="40" y="84" width="520" height="30"/>
+                                <state key="normal" title="运行时创建类"/>
+                                <connections>
+                                    <action selector="runingCreateClass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PIt-dJ-QDP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xS2-6e-y7i" firstAttribute="top" secondItem="Krm-YF-9S3" secondAttribute="bottom" constant="10" id="13b-9b-MsL"/>
+                            <constraint firstItem="7P9-Oj-5xm" firstAttribute="leading" secondItem="bYP-3f-PE3" secondAttribute="leading" id="2w6-YS-HSo"/>
+                            <constraint firstItem="7P9-Oj-5xm" firstAttribute="trailing" secondItem="bYP-3f-PE3" secondAttribute="trailing" id="930-Tx-gvO"/>
+                            <constraint firstItem="L8A-Cb-Wi8" firstAttribute="trailing" secondItem="bYP-3f-PE3" secondAttribute="trailing" id="Bq7-DY-Of8"/>
+                            <constraint firstItem="xS2-6e-y7i" firstAttribute="trailing" secondItem="bYP-3f-PE3" secondAttribute="trailing" id="FQK-Yh-e5V"/>
+                            <constraint firstItem="m8w-WU-nH0" firstAttribute="trailing" secondItem="bYP-3f-PE3" secondAttribute="trailing" id="IxA-D6-4VJ"/>
+                            <constraint firstItem="m8w-WU-nH0" firstAttribute="top" secondItem="L8A-Cb-Wi8" secondAttribute="bottom" constant="10" id="LBY-c5-Gbf"/>
+                            <constraint firstItem="L8A-Cb-Wi8" firstAttribute="top" secondItem="xS2-6e-y7i" secondAttribute="bottom" constant="10" id="NSy-15-elH"/>
+                            <constraint firstItem="xS2-6e-y7i" firstAttribute="leading" secondItem="bYP-3f-PE3" secondAttribute="leading" id="ORw-aN-4nn"/>
+                            <constraint firstItem="L8A-Cb-Wi8" firstAttribute="leading" secondItem="bYP-3f-PE3" secondAttribute="leading" id="Ooe-PL-jNi"/>
+                            <constraint firstItem="m8w-WU-nH0" firstAttribute="leading" secondItem="bYP-3f-PE3" secondAttribute="leading" id="Pbb-qL-X2U"/>
+                            <constraint firstItem="Krm-YF-9S3" firstAttribute="leading" secondItem="bYP-3f-PE3" secondAttribute="leading" id="Q0h-Fj-gMW"/>
+                            <constraint firstItem="bYP-3f-PE3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qas-RG-IPP"/>
+                            <constraint firstItem="Krm-YF-9S3" firstAttribute="trailing" secondItem="bYP-3f-PE3" secondAttribute="trailing" id="TAE-0N-3cy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bYP-3f-PE3" secondAttribute="trailing" constant="20" id="WiC-kR-IB9"/>
+                            <constraint firstItem="bYP-3f-PE3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="bYc-zB-BlO"/>
+                            <constraint firstItem="7P9-Oj-5xm" firstAttribute="top" secondItem="bYP-3f-PE3" secondAttribute="bottom" constant="10" id="iZE-iL-4Rz"/>
+                            <constraint firstItem="Ghp-hJ-EiB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="jVc-bH-M7T"/>
+                            <constraint firstItem="bYP-3f-PE3" firstAttribute="top" secondItem="Ghp-hJ-EiB" secondAttribute="bottom" constant="10" id="nxt-Vu-H5Q"/>
+                            <constraint firstItem="bYP-3f-PE3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="oIh-SF-dWs"/>
+                            <constraint firstItem="Ghp-hJ-EiB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="sw3-YY-V7Z"/>
+                            <constraint firstItem="Krm-YF-9S3" firstAttribute="top" secondItem="7P9-Oj-5xm" secondAttribute="bottom" constant="10" id="xMC-qD-2Jl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ghp-hJ-EiB" secondAttribute="trailing" constant="20" id="y43-l5-7JK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qas-RG-IPP"/>
+                                <exclude reference="bYc-zB-BlO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIs-mT-e8P">
+                                <rect key="frame" x="120" y="257" width="360" height="46"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="取消通知"/>
+                                <connections>
+                                    <action selector="cancelPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pCl-x2-ill"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSk-zq-8B0">
+                                <rect key="frame" x="120" y="151" width="360" height="46"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="3aV-4P-vmL"/>
+                                    <constraint firstAttribute="width" secondItem="jSk-zq-8B0" secondAttribute="height" multiplier="180:23" id="TmW-E4-eJD"/>
+                                    <constraint firstAttribute="width" constant="360" id="yFi-RY-Wbc"/>
+                                </constraints>
+                                <state key="normal" title="发送本地通知"/>
+                                <connections>
+                                    <action selector="pushMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KMp-Ca-hXK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jSk-zq-8B0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="9wE-8h-fN8"/>
+                            <constraint firstItem="oIs-mT-e8P" firstAttribute="top" secondItem="jSk-zq-8B0" secondAttribute="bottom" constant="60" id="Ah8-wc-TRF"/>
+                            <constraint firstItem="oIs-mT-e8P" firstAttribute="width" secondItem="jSk-zq-8B0" secondAttribute="width" id="Bhl-yw-64D"/>
+                            <constraint firstItem="oIs-mT-e8P" firstAttribute="leading" secondItem="jSk-zq-8B0" secondAttribute="leading" id="LA8-na-fcS"/>
+                            <constraint firstItem="jSk-zq-8B0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wqa-6L-avQ"/>
+                            <constraint firstItem="oIs-mT-e8P" firstAttribute="height" secondItem="jSk-zq-8B0" secondAttribute="height" id="qPp-km-HZe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

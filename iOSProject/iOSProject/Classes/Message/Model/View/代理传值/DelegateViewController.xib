@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DelegateViewController">
+            <connections>
+                <outlet property="aLabel" destination="1mS-q2-ZGM" id="VfZ-TZ-ffQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代理传值，多用于从后一个页面往前一个页面传值。关键点：谁是数据的提供方，谁写创建代理" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-hV-0hd">
+                    <rect key="frame" x="20" y="46" width="280" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="nX9-V8-beT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-cK-mDa">
+                    <rect key="frame" x="20" y="182" width="280" height="40"/>
+                    <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Nr0-as-gVX"/>
+                    </constraints>
+                    <state key="normal" title="跳转">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressButton:" destination="-1" eventType="touchUpInside" id="DA4-bR-oCR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="等待传值" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1mS-q2-ZGM">
+                    <rect key="frame" x="20" y="275" width="280" height="179"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="j3h-cK-mDa" firstAttribute="top" secondItem="JVb-hV-0hd" secondAttribute="bottom" constant="20" id="3Uk-ah-Oal"/>
+                <constraint firstItem="1mS-q2-ZGM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="G6E-16-jm5"/>
+                <constraint firstAttribute="trailing" secondItem="JVb-hV-0hd" secondAttribute="trailing" constant="20" id="Jxa-kA-8EO"/>
+                <constraint firstItem="JVb-hV-0hd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Mxx-kP-qKB"/>
+                <constraint firstItem="1mS-q2-ZGM" firstAttribute="top" secondItem="j3h-cK-mDa" secondAttribute="bottom" constant="53" id="R2I-3U-kH0"/>
+                <constraint firstItem="JVb-hV-0hd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="Ylk-Qk-U93"/>
+                <constraint firstItem="j3h-cK-mDa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ZZK-rE-FIv"/>
+                <constraint firstAttribute="trailing" secondItem="1mS-q2-ZGM" secondAttribute="trailing" constant="20" id="o0y-dl-7Nb"/>
+                <constraint firstAttribute="trailing" secondItem="j3h-cK-mDa" secondAttribute="trailing" constant="20" id="vb3-Bf-lGA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

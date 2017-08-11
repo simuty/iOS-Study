@@ -1,0 +1,53 @@
+PODS:
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - CYLTabBarController (1.4.5)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HYBNetworking (3.1.0):
+    - AFNetworking (~> 3.0.0)
+  - MJRefresh (3.1.12)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - CYLTabBarController (~> 1.4.4)
+  - FMDB (~> 2.6.2)
+  - HYBNetworking (~> 3.1.0)
+  - MJRefresh (~> 3.1.0)
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage (~> 3.7.6)
+  - YYModel (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  CYLTabBarController: 791db3eb4be89f6f01fea76b87d9fa05128a9fd8
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HYBNetworking: 91bbd4a7c022106ed7143c6a5a6cc00cce4f2e22
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 58050b84b39b6bcfab32954381ec0f8879de8be4
+
+COCOAPODS: 1.0.0
